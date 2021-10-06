@@ -1,0 +1,173 @@
+body {
+    background-image: url("https://coolprogeny.com/wp-content/uploads/2018/05/ComicBooks.jpg");
+    height: 100%;
+  }
+  #main {
+    text-align: center;
+    background-color:rgba(255,255,255,.6);
+    box-sizing: border-box;
+    padding-top: 10px 20px 0px 20px;
+  }
+  #title, #title2 {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 2px 2px 5px rgb(252, 174, 189);
+  }
+  #title{
+    font-size: 5em;
+     height: 10vh;
+     width: 100vw;
+  }
+  #title2 {
+    font-size: 3em;
+     height: 5vh;
+     width: 100vw;
+  }
+  /* BACKGROUND FOR THE GAME */
+  #game-bg {
+    justify-content: center;
+    align-items: center; 
+    border: 5px dashed crimson;
+    height: 65vh;
+    background-color:rgba(255,255,255,.8);
+      margin-right: 50px;
+      margin-left: 50px;
+  }
+  
+  
+  /*  INSTRUCTIONS FOR THE GAMES AND RESPONSE TO USER */
+  #msg {
+    margin-top: 30px;
+  }
+  
+  #game-msg ,#msg {
+    font-size: 3em;
+    font-family: 'Bangers', cursive;
+  }
+  
+  /*  IMAGES RENDERD */
+  #picture  {
+    border: 9px solid black;
+    max-height: 30vh;
+    max-width: 30vw ;
+    margin: 10px 5px 10px 5px;
+    border-radius: 16px;
+    display: inherit;
+    
+  }
+  #picture-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+  }
+  
+  /*  IN-GAME BUTTONS  AND INPUT CELLS */
+  #input{
+    border-radius: 8px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  /* GAME CHOICE BUTTONS */
+  #game-choice-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #hs-game-button, #nc-game-button, #hv-game-button {
+    font-size: 2em;
+    font-family: 'Bangers', cursive;
+    border-radius: 8px;
+    margin: 10px 0px;
+    text-align: center;
+  }
+  /* LABEL FOR IN-GAME BUTTONS */
+  #button-choice-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  #hero-villain-label{
+    margin: auto;
+    text-align: center;
+  }
+  #hero , #villain {
+    margin-right: 0px;
+    background-color: rgba(255,255,255,.01);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    border: none;
+    width: 100px; 
+    height: 80px; 
+    font-size: 2rem; 
+    font-family: 'Comic Neue', cursive;
+  
+  }
+  #villain{
+    background-image: url("https://3.bp.blogspot.com/-JnWsL0kL4mg/VDMvvj9DS1I/AAAAAAAD_2c/yvn-6zIqvso/s1600/wonder-woman-pretty-clipart-021.png");
+  }
+  #hero{
+      background-image: url("https://3.bp.blogspot.com/-Opj-Qfzkzds/VDMvg__OgDI/AAAAAAAD_08/08pKZXl2QiU/s1600/wonder-woman-pretty-clipart-006.png");
+    
+  }
+  #villain:hover, #hero:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      opacity: .8;
+  }
+  #villain:focus, #hero:focus {
+    outline: 0;
+  }
+  
+  /*  ADJUSTING SIZES FOR SCREEN */
+  
+  @media only screen and (max-width: 1200px) {
+    #title {
+      font-size: 4em;
+    }
+    #title2 {
+      font-size: 2em;
+    }
+    #game-bg {
+      margin-right: 0px;
+      margin-left: 0px;
+      height: 100%;
+    }
+    #player-name{
+      font-size: .5em;
+    }
+     #game-msg, #msg{
+      font-size: 2.5em;
+    }
+    #game-choice-buttons{
+  /*     width: 50vw; */
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+     #hs-game-button, #nc-game-button, #hv-game-button {
+      font-size: 1.5em;
+    }
+    #input {
+      font-size: 1em;
+    }
+  }
+  
+  /*  PLAYER NAME FOR THE HERO VILLAIN BATTLE GAME*/
+  #player-name {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    font-size: 2em;
+    padding-top: 20px;
+    font-family: 'Luckiest Guy', cursive;
+  }
